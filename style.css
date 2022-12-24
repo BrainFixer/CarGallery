@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.slide1 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ferrari_488_GTB_%2817134610179%29.jpg/1200px-Ferrari_488_GTB_%2817134610179%29.jpg);
+}
+.slide2 {
+  background-image: url(https://i.ytimg.com/vi/QWjVYegj5Ho/maxresdefault.jpg);
+}
+.slide3 {
+  background-image: url(https://toyotaassets.scene7.com/is/image/toyota/Lexus-IS-homepage-vehicles-and-current-offers-750x460-LEX-ISF-MY23-0026.01?wid=750&hei=460);
+}
+.slide4 {
+  background-image: url(https://dvizhok.su/i/files2/auto/2017/11/Aston_Martin_Vantage_2019_premiere_2.jpg);
+}
+.slide5 {
+  background-image: url(https://www.ixbt.com/img/n1/news/2022/0/4/tesla-roadster_large.jpg);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://cdn.discordapp.com/attachments/1020014601687027874/1056214049936908288/OIP.png);
+  background-size: cover;
+}
+
+.container {
+  height: 80vh;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+
+.slide {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: red;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+h3 {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.5s ease 0.5s;
+}
+
+.active {
+  flex: 10;
+}
+
+.active h3 {
+  opacity: 1;
+}
